@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RacingEdge | 2000 Guineas 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#F7F3EC;color:#0E0C0A;font-family:'DM Sans',-apple-system,sans-serif;font-weight:300;overflow-x:hidden}
+.mast{background:#0E0C0A}
+.mast-top{display:flex;align-items:center;justify-content:space-between;padding:16px 20px 14px;border-bottom:1px solid rgba(255,255,255,.08)}
+.brand{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:.12em;color:#D4A843}
+.brand-sub{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-top:2px}
+.badge{display:flex;align-items:center;gap:6px;background:rgba(212,168,67,.12);border:1px solid rgba(212,168,67,.3);border-radius:100px;padding:5px 12px;font-size:11px;font-weight:500;text-transform:uppercase;color:#F0D590}
+.dot{width:7px;height:7px;border-radius:50%;background:#D4A843;animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.hero{padding:28px 20px 32px}
+.eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.eyebrow-t{font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#D4A843;white-space:nowrap}
+.eyebrow-l{flex:1;height:1px;background:linear-gradient(to right,rgba(212,168,67,.4),transparent)}
+.hl{font-family:'Bebas Neue',sans-serif;font-size:clamp(56px,14vw,82px);line-height:.88;color:#fff;letter-spacing:.04em;margin-bottom:8px}
+.hl .yr{color:#D4A843;font-size:.5em;vertical-align:super}
+.sub{font-family:'Crimson Pro',Georgia,serif;font-size:17px;color:rgba(255,255,255,.5);font-style:italic;margin-bottom:24px;line-height:1.4}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.07);border-radius:8px;overflow:hidden}
+.fact{background:rgba(255,255,255,.04);padding:11px 14px}
+.fl{font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#D4A843;margin-bottom:3px}
+.fv{font-size:13px;font-weight:500;color:#fff}
+.intro{background:#D4A843;padding:14px 20px}
+.intro p{font-family:'Crimson Pro',Georgia,serif;font-size:16px;color:#0E0C0A;line-height:1.5;font-weight:600}
+.sh{display:flex;align-items:center;gap:12px;padding:24px 20px 0}
+.shl{font-size:10px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:#8C857C;white-space:nowrap}
+.shr{flex:1;height:1px;background:#D4C9BB}
+.card{margin:16px 14px 0;border-radius:10px;overflow:hidden;box-shadow:0 2px 14px rgba(0,0,0,.09);border:1px solid #D4C9BB;background:#fff}
+.stripe{height:5px;display:block}
+.cm{padding:16px 16px 0}
+.ct{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:10px}
+.cid{display:flex;align-items:flex-start;gap:10px}
+.silk{width:34px;height:34px;border-radius:50%;flex-shrink:0;border:2px solid rgba(0,0,0,.1);margin-top:3px}
+.hn{font-family:'Bebas Neue',sans-serif;font-size:26px;line-height:1;letter-spacing:.06em;color:#0E0C0A}
+.chip{display:inline-block;background:#1E4D35;color:#fff;font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:2px 7px;border-radius:3px;margin-left:6px;vertical-align:middle;position:relative;top:-3px}
+.ob{text-align:right;flex-shrink:0}
+.op{font-family:'Bebas Neue',sans-serif;font-size:30px;line-height:1;color:#1E4D35}
+.ol{font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#8C857C}
+.pills{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px}
+.pill{background:#EDE7DB;border-radius:100px;padding:3px 10px;font-size:11px;font-weight:500;color:#4A4540}
+.pill strong{color:#0E0C0A;font-weight:700}
+.desc{font-family:'Crimson Pro',Georgia,serif;font-size:16px;color:#4A4540;line-height:1.65;margin-bottom:12px}
+.desc strong{color:#0E0C0A;font-weight:600}
+.qt{background:#0E0C0A;border-radius:8px;padding:13px 15px;margin:12px 0}
+.qt-t{font-family:'Crimson Pro',Georgia,serif;font-size:15px;font-style:italic;color:#F0D590;line-height:1.6}
+.qt-b{font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:rgba(212,168,67,.45);margin-top:6px}
+.note{background:rgba(212,168,67,.08);border-left:3px solid #D4A843;border-radius:0 6px 6px 0;padding:10px 13px;margin:12px 0;font-size:13px;color:#4A4540;line-height:1.5}
+.note strong{color:#0E0C0A;font-weight:600}
+.vw{margin:14px -1px 0}
+.vbar{background:#111;padding:8px 16px;display:flex;align-items:center;gap:8px}
+.yti{width:22px;height:16px;background:#FF0000;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.yti svg{width:9px;height:9px;fill:#fff}
+.vt{font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.vtit{font-size:12px;font-weight:500;color:#fff;flex:1;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.vbox{position:relative;width:100%;padding-bottom:56.25%;background:#000}
+.vbox iframe{position:absolute;inset:0;width:100%;height:100%;border:none;display:block}
+.cf{height:16px}
+.also{margin:16px 14px 0;border-radius:10px;overflow:hidden;border:1px solid #D4C9BB;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.also-h{background:#0E0C0A;padding:11px 16px;font-family:'Bebas Neue',sans-serif;font-size:17px;letter-spacing:.1em;color:#D4A843}
+.ar{display:flex;align-items:center;padding:11px 16px;border-bottom:1px solid #EDE7DB;gap:10px}
+.ar:last-child{border-bottom:none}
+.as{width:26px;height:26px;border-radius:50%;flex-shrink:0;border:2px solid rgba(0,0,0,.08)}
+.an{font-family:'Bebas Neue',sans-serif;font-size:17px;color:#0E0C0A;flex:1}
+.am{font-size:10px;color:#8C857C;line-height:1.4;text-align:right}
+.ao{font-family:'Bebas Neue',sans-serif;font-size:17px;color:#1E4D35;min-width:38px;text-align:right}
+.odb{margin:16px 14px 0;border-radius:10px;overflow:hidden;border:1px solid #D4C9BB;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.odh{background:#1E4D35;padding:13px 16px;display:flex;align-items:center;justify-content:space-between}
+.odht{font-family:'Bebas Neue',sans-serif;font-size:18px;color:#fff}
+.odhs{font-size:10px;color:rgba(255,255,255,.45);text-transform:uppercase}
+.odr{display:flex;align-items:center;padding:10px 16px;border-bottom:1px solid #EDE7DB;gap:8px;background:#fff}
+.odr:last-child{border-bottom:none}
+.odr.hi{background:rgba(30,77,53,.04)}
+.odn{font-family:'Bebas Neue',sans-serif;font-size:12px;color:#8C857C;width:18px;flex-shrink:0}
+.ods{width:20px;height:20px;border-radius:50%;flex-shrink:0;border:1.5px solid rgba(0,0,0,.08)}
+.odna{flex:1;font-weight:500;font-size:14px;color:#0E0C0A}
+.odtr{font-size:11px;color:#8C857C}
+.odp{font-family:'Bebas Neue',sans-serif;font-size:19px;color:#1E4D35;min-width:44px;text-align:right}
+.odp.fav{color:#8C1C13}
+.verd{margin:16px 14px 0;border-radius:10px;overflow:hidden;border:1px solid #D4C9BB;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.vh{background:linear-gradient(135deg,#D4A843,#C4952A);padding:14px 18px;display:flex;align-items:center;gap:10px}
+.vht{font-family:'Bebas Neue',sans-serif;font-size:20px;color:#0E0C0A}
+.vb{background:#fff;padding:18px}
+.vb p{font-family:'Crimson Pro',Georgia,serif;font-size:16px;color:#4A4540;line-height:1.7;margin-bottom:12px}
+.vb strong{color:#0E0C0A;font-weight:700}
+.picks{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px;margin-top:16px}
+.pick{background:#EDE7DB;border-radius:8px;padding:11px 8px;text-align:center;border:2px solid transparent}
+.pick.nap{border-color:#1E4D35;background:rgba(30,77,53,.06)}
+.pl{font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#8C857C;margin-bottom:4px}
+.pick.nap .pl{color:#1E4D35}
+.ph{font-family:'Bebas Neue',sans-serif;font-size:14px;color:#0E0C0A;margin-bottom:2px}
+.pp{font-family:'Bebas Neue',sans-serif;font-size:17px;color:#1E4D35}
+footer{margin:24px 0 0;background:#0E0C0A;padding:24px 20px;text-align:center}
+.fb{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:.15em;color:#D4A843;margin-bottom:8px}
+.fr{width:40px;height:1px;background:rgba(255,255,255,.12);margin:10px auto}
+.ft{font-size:11px;color:rgba(255,255,255,.28);line-height:1.7}
+.s-yb{background:linear-gradient(135deg,#D4A843 50%,#111 50%)}
+.s-rb{background:#0D2B6B}
+.s-bo{background:linear-gradient(135deg,#0D2B6B 50%,#E85C0A 50%)}
+.s-ma{background:#6B1A2A}
+.s-mb{background:#3B5BA5}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="mast-top">
+    <div><div class="brand">RacingEdge</div><div class="brand-sub">Classic Preview</div></div>
+    <div class="badge"><div class="dot"></div>Saturday 2 May</div>
+  </div>
+  <div class="hero">
+    <div class="eyebrow"><div class="eyebrow-t">Betfred &middot; Group 1 &middot; 1 Mile</div><div class="eyebrow-l"></div></div>
+    <div class="hl">2000<br>Guineas<span class="yr">'26</span></div>
+    <div class="sub">The Flat season's first Classic &mdash; 15 runners, one Rowley Mile, everything to prove</div>
+    <div class="facts">
+      <div class="fact"><div class="fl">Racecourse</div><div class="fv">Newmarket</div></div>
+      <div class="fact"><div class="fl">Off Time</div><div class="fv">3:35pm</div></div>
+      <div class="fact"><div class="fl">TV Coverage</div><div class="fv">ITV1 / Racing TV</div></div>
+      <div class="fact"><div class="fl">Prize Money</div><div class="fv">~&pound;297,000</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="intro"><p>George Boughey's unbeaten favourite heads a wide-open renewal packed with intrigue &mdash; Classic debutants, a supplemented Breeders' Cup hero and Godolphin chasing a historic hat-trick. &#127943;</p></div>
+
+<div class="sh"><div class="shl">Key Contenders</div><div class="shr"></div></div>
+
+<!-- BOW ECHO -->
+
+<div class="card">
+  <div class="stripe" style="background:linear-gradient(to right,#D4A843,#111 60%,#D4A843)"></div>
+  <div class="cm">
+    <div class="ct">
+      <div class="cid"><div class="silk s-yb"></div><div><div class="hn">Bow Echo<span class="chip">FAV</span></div></div></div>
+      <div class="ob"><div class="op">7/2</div><div class="ol">Betfred</div></div>
+    </div>
+    <div class="pills">
+      <div class="pill">Trainer: <strong>G. Boughey</strong></div>
+      <div class="pill">Jockey: <strong>B. Loughnane</strong></div>
+      <div class="pill">Form: <strong>1-1-1</strong></div>
+    </div>
+    <div class="desc">Unbeaten in three starts and trained right on the Newmarket doorstep, Bow Echo goes in off a spring his trainer describes as &ldquo;totally faultless.&rdquo; Skipped a trial in favour of racecourse gallops on the Rowley Mile and was seen quickening sharply through the famous Dip. His sire <strong>Night Of Thunder</strong> won this very race in 2014.</div>
+    <div class="qt"><div class="qt-t">&ldquo;We fear everyone. It's the Guineas. But I wouldn't swap him.&rdquo;</div><div class="qt-b">&mdash; George Boughey, Trainer</div></div>
+    <div class="qt"><div class="qt-t">&ldquo;He's the full package &mdash; brilliant jockey, great mind. I consider him a friend. That gives him the freedom to ride with complete confidence.&rdquo;</div><div class="qt-b">&mdash; George Boughey, on Billy Loughnane</div></div>
+    <div class="note">&#128155; Bow Echo runs in the <strong>yellow and black spots</strong> of his late breeder <strong>Sheikh Mohammed Obaid</strong>, who passed away in December 2025. Winning this Classic would be a deeply poignant tribute.</div>
+  </div>
+  <div class="vw">
+    <div class="vbar"><div class="yti"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div><div class="vt">Watch the win &middot;</div><div class="vtit">Royal Lodge Stakes, Newmarket 2025</div></div>
+    <div class="vbox"><iframe src="https://www.youtube.com/embed/e15UtiMmVhk?rel=0&modestbranding=1" title="Bow Echo Royal Lodge Stakes" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+  </div>
+  <div class="cf"></div>
+</div>
+
+<!-- DISTANT STORM -->
+
+<div class="card">
+  <div class="stripe" style="background:#0D2B6B"></div>
+  <div class="cm">
+    <div class="ct">
+      <div class="cid"><div class="silk s-rb"></div><div><div class="hn">Distant Storm</div></div></div>
+      <div class="ob"><div class="op">4/1</div><div class="ol">Betfred</div></div>
+    </div>
+    <div class="pills">
+      <div class="pill">Trainer: <strong>C. Appleby</strong></div>
+      <div class="pill">Jockey: <strong>W. Buick</strong></div>
+      <div class="pill"><strong>Godolphin</strong></div>
+    </div>
+    <div class="desc">Godolphin are gunning for a <strong>third consecutive Guineas victory</strong>. Electric when winning the Tattersalls Stakes at this track last September, then a solid third in the Dewhurst. Appleby has kept him fresh, believing he shows up best on the day.</div>
+    <div class="qt"><div class="qt-t">&ldquo;He's a very clean-winded horse. We are lucky enough to go straight into a Guineas. He's a better horse running fresh.&rdquo;</div><div class="qt-b">&mdash; Charlie Appleby, Trainer</div></div>
+  </div>
+  <div class="cf"></div>
+</div>
+
+<!-- GSTAAD -->
+
+<div class="card">
+  <div class="stripe" style="background:linear-gradient(to right,#0D2B6B 50%,#E85C0A 50%)"></div>
+  <div class="cm">
+    <div class="ct">
+      <div class="cid"><div class="silk s-bo"></div><div><div class="hn">Gstaad</div></div></div>
+      <div class="ob"><div class="op">9/2</div><div class="ol">Betfred</div></div>
+    </div>
+    <div class="pills">
+      <div class="pill">Trainer: <strong>A. O'Brien</strong></div>
+      <div class="pill">Jockey: <strong>R. Moore</strong></div>
+      <div class="pill">37% bet share</div>
+    </div>
+    <div class="desc">The <strong>most popular ante-post bet this week</strong>. Won the Coventry Stakes at Royal Ascot, then overcame trouble in running to land the <strong>Breeders' Cup Juvenile Turf</strong>. Connections paid &pound;30,000 to supplement him back in after an admin error saw him mistakenly scratched. <strong>Ryan Moore</strong> takes the ride.</div>
+    <div class="note">&#9889; <strong>Drama alert:</strong> Gstaad was accidentally scratched last month. O'Brien paid &pound;30,000 to get him back in &mdash; a clear sign of confidence from Ballydoyle.</div>
+  </div>
+  <div class="cf"></div>
+</div>
+
+<!-- OXAGON -->
+
+<div class="card">
+  <div class="stripe" style="background:linear-gradient(to right,#6B1A2A,#8C3545)"></div>
+  <div class="cm">
+    <div class="ct">
+      <div class="cid"><div class="silk s-ma"></div><div><div class="hn">Oxagon</div></div></div>
+      <div class="ob"><div class="op">11/1</div><div class="ol">Betfred</div></div>
+    </div>
+    <div class="pills">
+      <div class="pill">Trainer: <strong>J&amp;T Gosden</strong></div>
+      <div class="pill">Jockey: <strong>O. Murphy</strong></div>
+      <div class="pill">&#127942; Craven winner</div>
+    </div>
+    <div class="desc">The <strong>Craven Stakes winner two weeks ago</strong> &mdash; on this exact course and distance. Fitted with first-time cheekpieces, he dictated from the front and kicked impressively through the Dip. The Gosdens are still chasing their elusive first 2000 Guineas and Oxagon gives them their best chance in years.</div>
+    <div class="qt"><div class="qt-t">&ldquo;He's the perfect model &mdash; good mover, nice temperament, very professional today.&rdquo;</div><div class="qt-b">&mdash; Oisin Murphy, Jockey</div></div>
+    <div class="qt"><div class="qt-t">&ldquo;Another Craven &mdash; we're quite good at winning that!&rdquo;</div><div class="qt-b">&mdash; John Gosden, Trainer</div></div>
+  </div>
+  <div class="vw">
+    <div class="vbar"><div class="yti"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div><div class="vt">Watch the win &middot;</div><div class="vtit">Betway Craven Stakes, Newmarket 2026</div></div>
+    <div class="vbox"><iframe src="https://www.youtube.com/embed/0nf5kh-J6nA?rel=0&modestbranding=1" title="Oxagon Craven Stakes" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+  </div>
+  <div class="cf"></div>
+</div>
+
+<div class="sh"><div class="shl">Also in the Field</div><div class="shr"></div></div>
+
+<div class="also">
+  <div class="also-h">Others to Note</div>
+  <div class="ar"><div class="as s-yb"></div><div class="an">Alparslan</div><div class="am">K. Burke / C. Lee<br>Greenham winner</div><div class="ao">16/1</div></div>
+  <div class="ar"><div class="as s-rb"></div><div class="an">King's Trail</div><div class="am">C. Appleby / J. Doyle<br>Unbeaten, lightly raced</div><div class="ao">15/2</div></div>
+  <div class="ar"><div class="as s-rb"></div><div class="an">Avicenna</div><div class="am">R. Varian / R. Dawson<br>Craven runner-up</div><div class="ao">14/1</div></div>
+  <div class="ar"><div class="as s-mb"></div><div class="an">Needle Match</div><div class="am">W. Haggas / T. Marquand<br>Each-way player</div><div class="ao">20/1</div></div>
+</div>
+
+<div class="sh"><div class="shl">Full Market</div><div class="shr"></div></div>
+
+<div class="odb">
+  <div class="odh"><div class="odht">Betfred 2000 Guineas</div><div class="odhs">Odds correct 30/04/26</div></div>
+  <div class="odr hi"><div class="odn">1</div><div class="ods s-yb"></div><div class="odna">Bow Echo</div><div class="odtr">Boughey</div><div class="odp fav">7/2</div></div>
+  <div class="odr hi"><div class="odn">2</div><div class="ods s-rb"></div><div class="odna">Distant Storm</div><div class="odtr">Appleby</div><div class="odp">4/1</div></div>
+  <div class="odr hi"><div class="odn">3</div><div class="ods s-bo"></div><div class="odna">Gstaad</div><div class="odtr">O'Brien</div><div class="odp">9/2</div></div>
+  <div class="odr"><div class="odn">4</div><div class="ods s-rb"></div><div class="odna">King's Trail</div><div class="odtr">Appleby</div><div class="odp">15/2</div></div>
+  <div class="odr"><div class="odn">5</div><div class="ods s-ma"></div><div class="odna">Oxagon</div><div class="odtr">Gosden</div><div class="odp">11/1</div></div>
+  <div class="odr"><div class="odn">6</div><div class="ods s-rb"></div><div class="odna">Avicenna</div><div class="odtr">Varian</div><div class="odp">14/1</div></div>
+  <div class="odr"><div class="odn">7</div><div class="ods s-yb"></div><div class="odna">Alparslan</div><div class="odtr">Burke</div><div class="odp">16/1</div></div>
+  <div class="odr"><div class="odn">8</div><div class="ods s-mb"></div><div class="odna">Needle Match</div><div class="odtr">Haggas</div><div class="odp">20/1</div></div>
+</div>
+
+<div class="sh"><div class="shl">RacingEdge Verdict</div><div class="shr"></div></div>
+
+<div class="verd">
+  <div class="vh"><div style="font-size:20px">&#127919;</div><div class="vht">The RacingEdge Call</div></div>
+  <div class="vb">
+    <p><strong>Bow Echo</strong> is the rightful favourite &mdash; unbeaten, course-proven, trained by a man who has been here before. The fast ground forecast suits him perfectly.</p>
+    <p><strong>Gstaad</strong> with Ryan Moore is a solid each-way play at 9/2. The highest-rated horse in the field and Moore rarely boards a supplementary runner without expecting to go close.</p>
+    <p>Our <strong>NAP is Oxagon at 11/1</strong>. Same track, same trip, won with real authority just two weeks ago under a masterclass from Oisin Murphy. The Gosdens know this course better than anyone. The each-way terms make this a very appealing bet.</p>
+    <div class="picks">
+      <div class="pick nap"><div class="pl">&#11088; NAP</div><div class="ph">Oxagon</div><div class="pp">11/1</div></div>
+      <div class="pick"><div class="pl">Each Way</div><div class="ph">Gstaad</div><div class="pp">9/2</div></div>
+      <div class="pick"><div class="pl">Saver</div><div class="ph">Bow Echo</div><div class="pp">7/2</div></div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="fb">RacingEdge</div>
+  <div class="fr"></div>
+  <div class="ft">18+ &middot; Please gamble responsibly<br>begambleaware.org &middot; 0808 8020 133</div>
+</footer>
+
+</body>
+</html>
