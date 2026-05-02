@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RacingEdge | Kentucky Derby Preview 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#F7F3EC;color:#0E0C0A;font-family:'DM Sans',-apple-system,sans-serif;font-weight:300;overflow-x:hidden}
+.mast{background:#0E0C0A}
+.mast-top{display:flex;align-items:center;justify-content:space-between;padding:16px 20px 14px;border-bottom:1px solid rgba(255,255,255,.08)}
+.brand{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:.12em;color:#D4A843}
+.brand-sub{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-top:2px}
+.badge{display:flex;align-items:center;gap:6px;background:rgba(212,168,67,.12);border:1px solid rgba(212,168,67,.3);border-radius:100px;padding:5px 12px;font-size:11px;font-weight:500;text-transform:uppercase;color:#F0D590}
+.dot{width:7px;height:7px;border-radius:50%;background:#D4A843;animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.hero{padding:28px 20px 32px}
+.eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.eyebrow-t{font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#C41E3A;white-space:nowrap}
+.eyebrow-l{flex:1;height:1px;background:linear-gradient(to right,rgba(196,30,58,.5),transparent)}
+.hl{font-family:'Bebas Neue',sans-serif;font-size:clamp(52px,13vw,80px);line-height:.88;color:#fff;letter-spacing:.04em;margin-bottom:8px}
+.hl .yr{color:#C41E3A;font-size:.5em;vertical-align:super}
+.sub{font-family:'Crimson Pro',Georgia,serif;font-size:17px;color:rgba(255,255,255,.5);font-style:italic;margin-bottom:24px;line-height:1.4}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.07);border-radius:8px;overflow:hidden}
+.fact{background:rgba(255,255,255,.04);padding:11px 14px}
+.fl{font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#C41E3A;margin-bottom:3px}
+.fv{font-size:13px;font-weight:500;color:#fff}
+.intro{background:#C41E3A;padding:14px 20px}
+.intro p{font-family:'Crimson Pro',Georgia,serif;font-size:16px;color:#fff;line-height:1.5;font-weight:600}
+.sh{display:flex;align-items:center;gap:12px;padding:24px 20px 0}
+.shl{font-size:10px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:#8C857C;white-space:nowrap}
+.shr{flex:1;height:1px;background:#D4C9BB}
+.card{margin:16px 14px 0;border-radius:10px;overflow:hidden;box-shadow:0 2px 14px rgba(0,0,0,.09);border:1px solid #D4C9BB;background:#fff}
+.stripe{height:5px;display:block}
+.cm{padding:16px 16px 0}
+.ct{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:10px}
+.cid{display:flex;align-items:flex-start;gap:10px}
+.silk{width:34px;height:34px;border-radius:50%;flex-shrink:0;border:2px solid rgba(0,0,0,.1);margin-top:3px}
+.post-num{width:34px;height:34px;border-radius:50%;flex-shrink:0;border:2px solid rgba(0,0,0,.15);margin-top:3px;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:16px;font-weight:400;color:#fff}
+.hn{font-family:'Bebas Neue',sans-serif;font-size:26px;line-height:1;letter-spacing:.06em;color:#0E0C0A}
+.chip{display:inline-block;background:#C41E3A;color:#fff;font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:2px 7px;border-radius:3px;margin-left:6px;vertical-align:middle;position:relative;top:-3px}
+.chip-nap{background:#1E4D35}
+.ob{text-align:right;flex-shrink:0}
+.op{font-family:'Bebas Neue',sans-serif;font-size:30px;line-height:1;color:#1E4D35}
+.ol{font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#8C857C}
+.pills{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px}
+.pill{background:#EDE7DB;border-radius:100px;padding:3px 10px;font-size:11px;font-weight:500;color:#4A4540}
+.pill strong{color:#0E0C0A;font-weight:700}
+.desc{font-family:'Crimson Pro',Georgia,serif;font-size:16px;color:#4A4540;line-height:1.65;margin-bottom:12px}
+.desc strong{color:#0E0C0A;font-weight:600}
+.qt{background:#0E0C0A;border-radius:8px;padding:13px 15px;margin:12px 0}
+.qt-t{font-family:'Crimson Pro',Georgia,serif;font-size:15px;font-style:italic;color:#F0D590;line-height:1.6}
+.qt-b{font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:rgba(212,168,67,.45);margin-top:6px}
+.note{background:rgba(196,30,58,.06);border-left:3px solid #C41E3A;border-radius:0 6px 6px 0;padding:10px 13px;margin:12px 0;font-size:13px;color:#4A4540;line-height:1.5}
+.note strong{color:#0E0C0A;font-weight:600}
+.note-green{background:rgba(30,77,53,.06);border-left:3px solid #1E4D35;border-radius:0 6px 6px 0;padding:10px 13px;margin:12px 0;font-size:13px;color:#4A4540;line-height:1.5}
+.note-green strong{color:#0E0C0A;font-weight:600}
+.vw{margin:14px -1px 0}
+.vbar{background:#111;padding:8px 16px;display:flex;align-items:center;gap:8px}
+.yti{width:22px;height:16px;background:#FF0000;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.yti svg{width:9px;height:9px;fill:#fff}
+.vt{font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.vtit{font-size:12px;font-weight:500;color:#fff;flex:1;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.vbox{position:relative;width:100%;padding-bottom:56.25%;background:#000}
+.vbox iframe{position:absolute;inset:0;width:100%;height:100%;border:none;display:block}
+.cf{height:16px}
+.also{margin:16px 14px 0;border-radius:10px;overflow:hidden;border:1px solid #D4C9BB;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.also-h{background:#0E0C0A;padding:11px 16px;font-family:'Bebas Neue',sans-serif;font-size:17px;letter-spacing:.1em;color:#D4A843}
+.ar{display:flex;align-items:center;padding:11px 16px;border-bottom:1px solid #EDE7DB;gap:10px}
+.ar:last-child{border-bottom:none}
+.ap{width:26px;height:26px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:13px;color:#fff;border:2px solid rgba(0,0,0,.1)}
+.an{font-family:'Bebas Neue',sans-serif;font-size:17px;color:#0E0C0A;flex:1}
+.am{font-size:10px;color:#8C857C;line-height:1.4;text-align:right}
+.ao{font-family:'Bebas Neue',sans-serif;font-size:17px;color:#1E4D35;min-width:44px;text-align:right}
+.odb{margin:16px 14px 0;border-radius:10px;overflow:hidden;border:1px solid #D4C9BB;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.odh{background:#1E4D35;padding:13px 16px;display:flex;align-items:center;justify-content:space-between}
+.odht{font-family:'Bebas Neue',sans-serif;font-size:18px;color:#fff}
+.odhs{font-size:10px;color:rgba(255,255,255,.45);text-transform:uppercase}
+.odr{display:flex;align-items:center;padding:10px 16px;border-bottom:1px solid #EDE7DB;gap:8px;background:#fff}
+.odr:last-child{border-bottom:none}
+.odr.hi{background:rgba(196,30,58,.03)}
+.odn{font-family:'Bebas Neue',sans-serif;font-size:11px;color:#8C857C;width:20px;flex-shrink:0;text-align:center}
+.odp-num{width:20px;height:20px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:11px;color:#fff}
+.odna{flex:1;font-weight:500;font-size:14px;color:#0E0C0A}
+.odtr{font-size:11px;color:#8C857C}
+.odpr{font-family:'Bebas Neue',sans-serif;font-size:19px;color:#1E4D35;min-width:44px;text-align:right}
+.odpr.fav{color:#C41E3A}
+.verd{margin:16px 14px 0;border-radius:10px;overflow:hidden;border:1px solid #D4C9BB;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.vh{background:linear-gradient(135deg,#1E4D35,#2A6B4A);padding:14px 18px;display:flex;align-items:center;gap:10px}
+.vht{font-family:'Bebas Neue',sans-serif;font-size:20px;color:#fff}
+.vb{background:#fff;padding:18px}
+.vb p{font-family:'Crimson Pro',Georgia,serif;font-size:16px;color:#4A4540;line-height:1.7;margin-bottom:12px}
+.vb strong{color:#0E0C0A;font-weight:700}
+.picks{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px;margin-top:16px}
+.pick{background:#EDE7DB;border-radius:8px;padding:11px 8px;text-align:center;border:2px solid transparent}
+.pick.nap{border-color:#1E4D35;background:rgba(30,77,53,.06)}
+.pick.ew{border-color:#C41E3A;background:rgba(196,30,58,.04)}
+.pl{font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#8C857C;margin-bottom:4px}
+.pick.nap .pl{color:#1E4D35}
+.pick.ew .pl{color:#C41E3A}
+.ph{font-family:'Bebas Neue',sans-serif;font-size:13px;color:#0E0C0A;margin-bottom:2px;line-height:1.1}
+.pp{font-family:'Bebas Neue',sans-serif;font-size:17px;color:#1E4D35}
+footer{margin:24px 0 0;background:#0E0C0A;padding:24px 20px;text-align:center}
+.fb{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:.15em;color:#D4A843;margin-bottom:8px}
+.fr{width:40px;height:1px;background:rgba(255,255,255,.12);margin:10px auto}
+.ft{font-size:11px;color:rgba(255,255,255,.28);line-height:1.7}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="mast-top">
+    <div><div class="brand">RacingEdge</div><div class="brand-sub">Grade 1 Preview</div></div>
+    <div class="badge"><div class="dot"></div>Saturday 2 May</div>
+  </div>
+  <div class="hero">
+    <div class="eyebrow"><div class="eyebrow-t">Grade 1 &middot; Churchill Downs &middot; 1m 2f Dirt</div><div class="eyebrow-l"></div></div>
+    <div class="hl">Kentucky<br>Derby<span class="yr">'26</span></div>
+    <div class="sub">The 152nd Run for the Roses &mdash; 20 runners, $5 million, the first Saturday in May</div>
+    <div class="facts">
+      <div class="fact"><div class="fl">Racecourse</div><div class="fv">Churchill Downs</div></div>
+      <div class="fact"><div class="fl">Post Time</div><div class="fv">6:57pm ET</div></div>
+      <div class="fact"><div class="fl">TV Coverage</div><div class="fv">NBC Sports</div></div>
+      <div class="fact"><div class="fl">Purse</div><div class="fv">$5,000,000</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="intro"><p>The favourite draws the dreaded rail. Our NAP went nose-to-nose with the best in the Florida Derby. The 152nd Kentucky Derby has all the ingredients for a classic upset. &#127808;</p></div>
+
+<div class="sh"><div class="shl">Key Contenders</div><div class="shr"></div></div>
+
+<!-- THE PUMA -->
+
+<div class="card">
+  <div class="stripe" style="background:linear-gradient(to right,#8B4513,#D2691E)"></div>
+  <div class="cm">
+    <div class="ct">
+      <div class="cid">
+        <div class="post-num" style="background:#8B4513">9</div>
+        <div><div class="hn">The Puma<span class="chip chip-nap">NAP</span></div></div>
+      </div>
+      <div class="ob"><div class="op">7/1</div><div class="ol">Current odds</div></div>
+    </div>
+    <div class="pills">
+      <div class="pill">Trainer: <strong>G. Delgado</strong></div>
+      <div class="pill">Jockey: <strong>J. Castellano</strong></div>
+      <div class="pill">Post: <strong>9</strong></div>
+      <div class="pill">Form: <strong>3-1-2-1</strong></div>
+    </div>
+    <div class="desc">Only one horse in this field has faced <em>all four</em> of the top heavyweights on the morning line &mdash; and that horse is The Puma. He went nose-to-nose with <strong>Commandment in the Florida Derby</strong>, losing by just a nose after leading into the stretch. He won the Tampa Bay Derby before that, making a breathtaking five-wide move from last to first. <strong>Post 9 is ideal</strong> &mdash; wide enough to get the traffic-free run he needs, without giving up too much ground.</div>
+    <div class="qt">
+      <div class="qt-t">&ldquo;He did everything but win the Florida Derby. His best races put him right in the mix &mdash; and he has been super consistent.&rdquo;</div>
+      <div class="qt-b">&mdash; SportsLine horse racing expert on The Puma</div>
+    </div>
+    <div class="note-green">&#127822; <strong>The RacingEdge angle:</strong> The Florida Derby form reads Commandment, The Puma, Chief Wallabee. Commandment goes off at 6/1 here. The Puma, who lost by a <em>nose</em>, is available at 7/1. That is a serious overlay. Javier Castellano won this race in 2023 with Mage and knows Churchill Downs better than almost anyone. This horse is the value of the race.</div>
+    <div class="note-green">&#9889; <strong>Trainer Gustavo Delgado</strong> and jockey Castellano are the same partnership that won the 2023 Kentucky Derby with Mage at 15/1. They know how to win the big one.</div>
+  </div>
+  <div class="vw">
+    <div class="vbar"><div class="yti"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div><div class="vt">Watch the win &middot;</div><div class="vtit">The Puma wins the Tampa Bay Derby 2026</div></div>
+    <div class="vbox"><iframe src="https://www.youtube.com/embed/8jKQFVvvVqA?rel=0&modestbranding=1" title="The Puma Tampa Bay Derby" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+  </div>
+  <div class="cf"></div>
+</div>
+
+<!-- RENEGADE -->
+
+<div class="card">
+  <div class="stripe" style="background:linear-gradient(to right,#1a1a2e,#16213e)"></div>
+  <div class="cm">
+    <div class="ct">
+      <div class="cid">
+        <div class="post-num" style="background:#1a1a2e">1</div>
+        <div><div class="hn">Renegade<span class="chip">FAV</span></div></div>
+      </div>
+      <div class="ob"><div class="op">5/1</div><div class="ol">Current odds</div></div>
+    </div>
+    <div class="pills">
+      <div class="pill">Trainer: <strong>T. Pletcher</strong></div>
+      <div class="pill">Jockey: <strong>I. Ortiz Jr.</strong></div>
+      <div class="pill">Post: <strong>1</strong></div>
+      <div class="pill">Form: <strong>1-1</strong></div>
+    </div>
+    <div class="desc">The morning-line favourite and deserving one on form &mdash; won both the Sam F. Davis Stakes and the <strong>Arkansas Derby</strong>, blitzing the field by four lengths in the latter with a devastating turn of foot. Trained by Hall of Famer <strong>Todd Pletcher</strong> and ridden by five-time Eclipse Award winner <strong>Irad Ortiz Jr.</strong> But the post draw has thrown up a serious question mark.</div>
+    <div class="note">&#9888;&#65039; <strong>The concern:</strong> Renegade drew <strong>Post 1 &mdash; the rail</strong>. No horse has won the Kentucky Derby from Post 1 since 1986. That's 39 consecutive years without a winner from the inside gate. Pletcher's Derby record is 2 wins from 65 starters, and both victories came on <em>sloppy</em> tracks. Irad Ortiz Jr. is winless in nine Derby mounts. The form is there &mdash; but the stars are aligned against him.</div>
+  </div>
+  <div class="cf"></div>
+</div>
+
+<!-- COMMANDMENT -->
+
+<div class="card">
+  <div class="stripe" style="background:linear-gradient(to right,#2C3E50,#4CA1AF)"></div>
+  <div class="cm">
+    <div class="ct">
+      <div class="cid">
+        <div class="post-num" style="background:#2C3E50">6</div>
+        <div><div class="hn">Commandment</div></div>
+      </div>
+      <div class="ob"><div class="op">6/1</div><div class="ol">Current odds</div></div>
+    </div>
+    <div class="pills">
+      <div class="pill">Trainer: <strong>B. Cox</strong></div>
+      <div class="pill">Jockey: <strong>L. Saez</strong></div>
+      <div class="pill">Post: <strong>6</strong></div>
+      <div class="pill">Form: <strong>1-1-1-1</strong></div>
+    </div>
+    <div class="desc"><strong>Four wins from four starts</strong> &mdash; an unblemished record that includes the Fountain of Youth (G2) and the <strong>Florida Derby (G1)</strong>, where he edged The Puma by a nose in a breathless finish. Trained by <strong>Brad Cox</strong>, who also saddles Further Ado. If you're looking for the most consistent horse in the field on raw form, Commandment is your horse. But that Florida Derby margin was paper-thin.</div>
+  </div>
+  <div class="cf"></div>
+</div>
+
+<!-- FURTHER ADO -->
+
+<div class="card">
+  <div class="stripe" style="background:linear-gradient(to right,#B8860B,#DAA520)"></div>
+  <div class="cm">
+    <div class="ct">
+      <div class="cid">
+        <div class="post-num" style="background:#B8860B">18</div>
+        <div><div class="hn">Further Ado</div></div>
+      </div>
+      <div class="ob"><div class="op">7/1</div><div class="ol">Current odds</div></div>
+    </div>
+    <div class="pills">
+      <div class="pill">Trainer: <strong>B. Cox</strong></div>
+      <div class="pill">Jockey: <strong>J. Velazquez</strong></div>
+      <div class="pill">Post: <strong>18</strong></div>
+    </div>
+    <div class="desc">Demolished the Blue Grass Stakes field by <strong>11 and a half lengths</strong> &mdash; a performance that raised eyebrows around the world. Three-time Derby winner <strong>John Velazquez</strong> takes the mount. Drawn widest of the main dangers in Post 18, which brings its own challenges in a 20-horse field. Cox has a strong hand with both this horse and Commandment.</div>
+  </div>
+  <div class="cf"></div>
+</div>
+
+<!-- SO HAPPY -->
+
+<div class="card">
+  <div class="stripe" style="background:linear-gradient(to right,#6B2D8B,#9B59B6)"></div>
+  <div class="cm">
+    <div class="ct">
+      <div class="cid">
+        <div class="post-num" style="background:#6B2D8B">8</div>
+        <div><div class="hn">So Happy</div></div>
+      </div>
+      <div class="ob"><div class="op">6/1</div><div class="ol">Current odds</div></div>
+    </div>
+    <div class="pills">
+      <div class="pill">Jockey: <strong>M. Smith</strong></div>
+      <div class="pill">Post: <strong>8</strong></div>
+    </div>
+    <div class="desc">Drifted in the market after the draw but remains a genuine danger. The presence of <strong>Mike Smith</strong> &mdash; 28 Derby mounts and two victories, including Justify's 2018 Triple Crown &mdash; commands respect. Drawn alongside The Puma in Post 8, which sets up an interesting tactical battle on the first turn.</div>
+  </div>
+  <div class="cf"></div>
+</div>
+
+<div class="sh"><div class="shl">Also in the Field</div><div class="shr"></div></div>
+
+<div class="also">
+  <div class="also-h">Others to Note</div>
+  <div class="ar"><div class="ap" style="background:#2d6a4f">12</div><div class="an">Chief Wallabee</div><div class="am">B. Mott / J. Alvarado<br>Florida Derby 3rd</div><div class="ao">9/1</div></div>
+  <div class="ar"><div class="ap" style="background:#1a3a5c">7</div><div class="an">Danon Bourbon</div><div class="am">M. Ikezoe / R. Sakai<br>Unbeaten in Japan</div><div class="ao">14/1</div></div>
+  <div class="ar"><div class="ap" style="background:#5d4037">2</div><div class="an">Albus</div><div class="am">Wood Memorial winner<br>30/1</div><div class="ao">30/1</div></div>
+  <div class="ar"><div class="ap" style="background:#37474f">15</div><div class="an">Emerging Market</div><div class="am">Each-way player<br>11/1</div><div class="ao">11/1</div></div>
+</div>
+
+<div class="sh"><div class="shl">Full Market</div><div class="shr"></div></div>
+
+<div class="odb">
+  <div class="odh"><div class="odht">152nd Kentucky Derby</div><div class="odhs">Odds correct 02/05/26</div></div>
+  <div class="odr hi"><div class="odn">PP1</div><div class="odp-num" style="background:#1a1a2e">1</div><div class="odna">Renegade</div><div class="odtr">Pletcher</div><div class="odpr fav">5/1</div></div>
+  <div class="odr hi"><div class="odn">PP8</div><div class="odp-num" style="background:#6B2D8B">8</div><div class="odna">So Happy</div><div class="odtr">-</div><div class="odpr">6/1</div></div>
+  <div class="odr hi"><div class="odn">PP6</div><div class="odp-num" style="background:#2C3E50">6</div><div class="odna">Commandment</div><div class="odtr">Cox</div><div class="odpr">6/1</div></div>
+  <div class="odr hi"><div class="odn">PP9</div><div class="odp-num" style="background:#8B4513">9</div><div class="odna">The Puma</div><div class="odtr">Delgado</div><div class="odpr">7/1</div></div>
+  <div class="odr hi"><div class="odn">PP18</div><div class="odp-num" style="background:#B8860B">18</div><div class="odna">Further Ado</div><div class="odtr">Cox</div><div class="odpr">7/1</div></div>
+  <div class="odr"><div class="odn">PP12</div><div class="odp-num" style="background:#2d6a4f">12</div><div class="odna">Chief Wallabee</div><div class="odtr">Mott</div><div class="odpr">9/1</div></div>
+  <div class="odr"><div class="odn">PP15</div><div class="odp-num" style="background:#37474f">15</div><div class="odna">Emerging Market</div><div class="odtr">-</div><div class="odpr">11/1</div></div>
+  <div class="odr"><div class="odn">PP7</div><div class="odp-num" style="background:#1a3a5c">7</div><div class="odna">Danon Bourbon</div><div class="odtr">Ikezoe</div><div class="odpr">14/1</div></div>
+</div>
+
+<div class="sh"><div class="shl">RacingEdge Verdict</div><div class="shr"></div></div>
+
+<div class="verd">
+  <div class="vh"><div style="font-size:20px">&#127808;</div><div class="vht">The RacingEdge Call</div></div>
+  <div class="vb">
+    <p><strong>Renegade</strong> is the class act on form but the rail draw is a serious handicap. No horse has won from Post 1 in 39 years. With Pletcher's poor Derby strike rate and Ortiz yet to win this race, the market may be overestimating him.</p>
+    <p><strong>The Puma</strong> is our NAP. He lost the Florida Derby by a nose to Commandment &mdash; who goes off at 6/1. The Puma is available at 7/1. That's a genuine overlay. Javier Castellano won this race in 2023 with Mage from a similar position in the market. Post 9 gives him the outside run he needs. This horse has beaten or pushed every top rival in this field.</p>
+    <p><strong>Further Ado</strong> is our each-way play &mdash; that Blue Grass demolition job was extraordinary and John Velazquez is a three-time winner of this race. Post 18 is the only concern.</p>
+    <div class="picks">
+      <div class="pick nap"><div class="pl">&#11088; NAP</div><div class="ph">The Puma</div><div class="pp">7/1</div></div>
+      <div class="pick ew"><div class="pl">Each Way</div><div class="ph">Further Ado</div><div class="pp">7/1</div></div>
+      <div class="pick"><div class="pl">Saver</div><div class="ph">Commandment</div><div class="pp">6/1</div></div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="fb">RacingEdge</div>
+  <div class="fr"></div>
+  <div class="ft">18+ &middot; Please gamble responsibly<br>begambleaware.org &middot; 0808 8020 133</div>
+</footer>
+
+</body>
+</html>
