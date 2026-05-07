@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RacingEdge | Huxley Stakes Preview 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#F7F3EC;color:#0E0C0A;font-family:'DM Sans',-apple-system,sans-serif;font-weight:300;overflow-x:hidden}
+.mast{background:#0E0C0A}
+.mast-top{display:flex;align-items:center;justify-content:space-between;padding:16px 20px 14px;border-bottom:1px solid rgba(255,255,255,.08)}
+.brand{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:.12em;color:#D4A843}
+.brand-sub{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-top:2px}
+.badge{display:flex;align-items:center;gap:6px;background:rgba(212,168,67,.12);border:1px solid rgba(212,168,67,.3);border-radius:100px;padding:5px 12px;font-size:11px;font-weight:500;text-transform:uppercase;color:#F0D590}
+.dot{width:7px;height:7px;border-radius:50%;background:#D4A843;animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.hero{padding:28px 20px 32px}
+.eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.eyebrow-t{font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#2E7D32;white-space:nowrap}
+.eyebrow-l{flex:1;height:1px;background:linear-gradient(to right,rgba(46,125,50,.5),transparent)}
+.hl{font-family:'Bebas Neue',sans-serif;font-size:clamp(48px,12vw,76px);line-height:.88;color:#fff;letter-spacing:.04em;margin-bottom:8px}
+.hl .yr{color:#2E7D32;font-size:.5em;vertical-align:super}
+.sub{font-family:'Crimson Pro',Georgia,serif;font-size:17px;color:rgba(255,255,255,.5);font-style:italic;margin-bottom:24px;line-height:1.4}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.07);border-radius:8px;overflow:hidden}
+.fact{background:rgba(255,255,255,.04);padding:11px 14px}
+.fl{font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#2E7D32;margin-bottom:3px}
+.fv{font-size:13px;font-weight:500;color:#fff}
+.intro{background:#2E7D32;padding:14px 20px}
+.intro p{font-family:'Crimson Pro',Georgia,serif;font-size:16px;color:#fff;line-height:1.5;font-weight:600}
+.sh{display:flex;align-items:center;gap:12px;padding:24px 20px 0}
+.shl{font-size:10px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:#8C857C;white-space:nowrap}
+.shr{flex:1;height:1px;background:#D4C9BB}
+.card{margin:16px 14px 0;border-radius:10px;overflow:hidden;box-shadow:0 2px 14px rgba(0,0,0,.09);border:1px solid #D4C9BB;background:#fff}
+.stripe{height:5px;display:block}
+.cm{padding:16px 16px 0}
+.ct{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:10px}
+.cid{display:flex;align-items:flex-start;gap:10px}
+.silk{width:34px;height:34px;border-radius:50%;flex-shrink:0;border:2px solid rgba(0,0,0,.1);margin-top:3px}
+.hn{font-family:'Bebas Neue',sans-serif;font-size:26px;line-height:1;letter-spacing:.06em;color:#0E0C0A}
+.chip{display:inline-block;background:#2E7D32;color:#fff;font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:2px 7px;border-radius:3px;margin-left:6px;vertical-align:middle;position:relative;top:-3px}
+.chip-fav{background:#8C1C13}
+.ob{text-align:right;flex-shrink:0}
+.op{font-family:'Bebas Neue',sans-serif;font-size:30px;line-height:1;color:#2E7D32}
+.ol{font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#8C857C}
+.pills{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px}
+.pill{background:#EDE7DB;border-radius:100px;padding:3px 10px;font-size:11px;font-weight:500;color:#4A4540}
+.pill strong{color:#0E0C0A;font-weight:700}
+.desc{font-family:'Crimson Pro',Georgia,serif;font-size:16px;color:#4A4540;line-height:1.65;margin-bottom:12px}
+.desc strong{color:#0E0C0A;font-weight:600}
+.qt{background:#0E0C0A;border-radius:8px;padding:13px 15px;margin:12px 0}
+.qt-t{font-family:'Crimson Pro',Georgia,serif;font-size:15px;font-style:italic;color:#F0D590;line-height:1.6}
+.qt-b{font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:rgba(212,168,67,.45);margin-top:6px}
+.note{background:rgba(46,125,50,.06);border-left:3px solid #2E7D32;border-radius:0 6px 6px 0;padding:10px 13px;margin:12px 0;font-size:13px;color:#4A4540;line-height:1.5}
+.note strong{color:#0E0C0A;font-weight:600}
+.note-amber{background:rgba(212,168,67,.08);border-left:3px solid #D4A843;border-radius:0 6px 6px 0;padding:10px 13px;margin:12px 0;font-size:13px;color:#4A4540;line-height:1.5}
+.note-amber strong{color:#0E0C0A;font-weight:600}
+.note-red{background:rgba(140,28,19,.06);border-left:3px solid #8C1C13;border-radius:0 6px 6px 0;padding:10px 13px;margin:12px 0;font-size:13px;color:#4A4540;line-height:1.5}
+.note-red strong{color:#0E0C0A;font-weight:600}
+.vw{margin:14px -1px 0}
+.vbar{background:#111;padding:8px 16px;display:flex;align-items:center;gap:8px}
+.yti{width:22px;height:16px;background:#FF0000;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.yti svg{width:9px;height:9px;fill:#fff}
+.vt{font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.vtit{font-size:12px;font-weight:500;color:#fff;flex:1;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.vbox{position:relative;width:100%;padding-bottom:56.25%;background:#000}
+.vbox iframe{position:absolute;inset:0;width:100%;height:100%;border:none;display:block}
+.cf{height:16px}
+.also{margin:16px 14px 0;border-radius:10px;overflow:hidden;border:1px solid #D4C9BB;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.also-h{background:#0E0C0A;padding:11px 16px;font-family:'Bebas Neue',sans-serif;font-size:17px;letter-spacing:.1em;color:#D4A843}
+.ar{display:flex;align-items:center;padding:11px 16px;border-bottom:1px solid #EDE7DB;gap:10px}
+.ar:last-child{border-bottom:none}
+.as{width:26px;height:26px;border-radius:50%;flex-shrink:0;border:2px solid rgba(0,0,0,.08)}
+.an{font-family:'Bebas Neue',sans-serif;font-size:17px;color:#0E0C0A;flex:1}
+.am{font-size:10px;color:#8C857C;line-height:1.4;text-align:right}
+.ao{font-family:'Bebas Neue',sans-serif;font-size:17px;color:#2E7D32;min-width:38px;text-align:right}
+.odb{margin:16px 14px 0;border-radius:10px;overflow:hidden;border:1px solid #D4C9BB;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.odh{background:#2E7D32;padding:13px 16px;display:flex;align-items:center;justify-content:space-between}
+.odht{font-family:'Bebas Neue',sans-serif;font-size:18px;color:#fff}
+.odhs{font-size:10px;color:rgba(255,255,255,.45);text-transform:uppercase}
+.odr{display:flex;align-items:center;padding:10px 16px;border-bottom:1px solid #EDE7DB;gap:8px;background:#fff}
+.odr:last-child{border-bottom:none}
+.odr.hi{background:rgba(46,125,50,.04)}
+.odn{font-family:'Bebas Neue',sans-serif;font-size:12px;color:#8C857C;width:18px;flex-shrink:0}
+.ods{width:20px;height:20px;border-radius:50%;flex-shrink:0;border:1.5px solid rgba(0,0,0,.08)}
+.odna{flex:1;font-weight:500;font-size:14px;color:#0E0C0A}
+.odtr{font-size:11px;color:#8C857C}
+.odp{font-family:'Bebas Neue',sans-serif;font-size:19px;color:#2E7D32;min-width:44px;text-align:right}
+.odp.fav{color:#8C1C13}
+.verd{margin:16px 14px 0;border-radius:10px;overflow:hidden;border:1px solid #D4C9BB;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.vh{background:linear-gradient(135deg,#2E7D32,#1B5E20);padding:14px 18px;display:flex;align-items:center;gap:10px}
+.vht{font-family:'Bebas Neue',sans-serif;font-size:20px;color:#fff}
+.vb{background:#fff;padding:18px}
+.vb p{font-family:'Crimson Pro',Georgia,serif;font-size:16px;color:#4A4540;line-height:1.7;margin-bottom:12px}
+.vb strong{color:#0E0C0A;font-weight:700}
+.picks{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px;margin-top:16px}
+.pick{background:#EDE7DB;border-radius:8px;padding:11px 8px;text-align:center;border:2px solid transparent}
+.pick.nap{border-color:#2E7D32;background:rgba(46,125,50,.06)}
+.pick.ew{border-color:#D4A843;background:rgba(212,168,67,.06)}
+.pl{font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#8C857C;margin-bottom:4px}
+.pick.nap .pl{color:#2E7D32}
+.pick.ew .pl{color:#D4A843}
+.ph{font-family:'Bebas Neue',sans-serif;font-size:13px;color:#0E0C0A;margin-bottom:2px;line-height:1.1}
+.pp{font-family:'Bebas Neue',sans-serif;font-size:17px;color:#2E7D32}
+footer{margin:24px 0 0;background:#0E0C0A;padding:24px 20px;text-align:center}
+.fb{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:.15em;color:#D4A843;margin-bottom:8px}
+.fr{width:40px;height:1px;background:rgba(255,255,255,.12);margin:10px auto}
+.ft{font-size:11px;color:rgba(255,255,255,.28);line-height:1.7}
+.s-co{background:linear-gradient(135deg,#0D2B6B 50%,#E85C0A 50%)}
+.s-grn{background:#1B5E20}
+.s-red{background:#8C1C13}
+.s-navy{background:#1a237e}
+.s-gold{background:#B8860B}
+.s-teal{background:#00695C}
+.s-purple{background:#4A148C}
+.s-grey{background:#546E7A}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="mast-top">
+    <div><div class="brand">RacingEdge</div><div class="brand-sub">Group 2 Preview</div></div>
+    <div class="badge"><div class="dot"></div>Friday 8 May</div>
+  </div>
+  <div class="hero">
+    <div class="eyebrow"><div class="eyebrow-t">Group 2 &middot; Chester &middot; 1m 2f 70y</div><div class="eyebrow-l"></div></div>
+    <div class="hl">Deepbridge<br>Huxley<br>Stakes<span class="yr">'26</span></div>
+    <div class="sub">Derby champion returns to the Roodee &mdash; the place where it all began</div>
+    <div class="facts">
+      <div class="fact"><div class="fl">Racecourse</div><div class="fv">Chester (Roodee)</div></div>
+      <div class="fact"><div class="fl">Off Time</div><div class="fv">2:35pm</div></div>
+      <div class="fact"><div class="fl">TV Coverage</div><div class="fv">ITV4</div></div>
+      <div class="fact"><div class="fl">Prize Money</div><div class="fv">&pound;170,000</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="intro"><p>The dual Derby champion makes his eagerly-awaited return to the exact track where he announced himself to the world. Nine runners, good ground and a fascinating tactical puzzle on the tight Chester circuit. &#127807;</p></div>
+
+<div class="sh"><div class="shl">Key Contenders</div><div class="shr"></div></div>
+
+<!-- LAMBOURN -->
+
+<div class="card">
+  <div class="stripe" style="background:linear-gradient(to right,#0D2B6B 50%,#E85C0A 50%)"></div>
+  <div class="cm">
+    <div class="ct">
+      <div class="cid">
+        <div class="silk s-co"></div>
+        <div><div class="hn">Lambourn<span class="chip">NAP</span></div></div>
+      </div>
+      <div class="ob"><div class="op">Fav</div><div class="ol">Antepost</div></div>
+    </div>
+    <div class="pills">
+      <div class="pill">Trainer: <strong>A. O&rsquo;Brien</strong></div>
+      <div class="pill">Jockey: <strong>W. Lordan</strong></div>
+      <div class="pill">&#127942; Epsom &amp; Irish Derby</div>
+      <div class="pill">4yo colt</div>
+    </div>
+    <div class="desc">The <strong>dual Derby champion</strong> makes his seasonal reappearance at the very track where last year&rsquo;s story began. Twelve months ago he won the Chester Vase here &ldquo;going away&rdquo; &mdash; a performance that marked him out as a thorough stayer and set him on the path to Epsom. He won the Derby three and three-quarter lengths clear, then backed it up in the Irish Derby. Now he drops back to 10&frac12; furlongs and wears <strong>cheekpieces for the first time</strong> to sharpen him up on his return.</div>
+    <div class="qt">
+      <div class="qt-t">&ldquo;He&rsquo;s a very straightforward horse. He loved this track, the tight turns suit him perfectly. We&rsquo;re very much looking forward to seeing him back.&rdquo;</div>
+      <div class="qt-b">&mdash; Aidan O&rsquo;Brien, Trainer</div>
+    </div>
+    <div class="qt">
+      <div class="qt-t">&ldquo;I knew we&rsquo;d gone a good gallop but Lambourn&rsquo;s ears were pricked so I knew he had plenty left. He&rsquo;s a horse we always felt would stay.&rdquo;</div>
+      <div class="qt-b">&mdash; Wayne Lordan, Jockey &mdash; after Epsom Derby 2025</div>
+    </div>
+    <div class="note">&#127808; <strong>The RacingEdge angle:</strong> Lambourn won the Chester Vase here at 11/8 last May &mdash; this is his happy hunting ground. The trip of 1m2&frac12;f is shorter than his best, but the cheekpieces suggest O&rsquo;Brien wants him switched on quickly. He heads entries for the Prince of Wales&rsquo;s Stakes at Royal Ascot &mdash; this is simply a confidence-building reappearance. Back him to do the job.</div>
+    <div class="note">&#11088; <strong>Manhattan Stakes bonus:</strong> The Huxley winner earns a fees-paid berth in the <strong>$1 million Manhattan Stakes</strong> at Saratoga, which also serves as a route to the Melbourne Cup. Winning connections will have that firmly in mind.</div>
+  </div>
+  <div class="vw">
+    <div class="vbar"><div class="yti"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div><div class="vt">Watch the win &middot;</div><div class="vtit">Lambourn wins the 2025 Epsom Derby</div></div>
+    <div class="vbox"><iframe src="https://www.youtube.com/embed/placeholder_lambourn?rel=0&modestbranding=1" title="Lambourn wins the Epsom Derby 2025" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+  </div>
+  <div class="cf"></div>
+</div>
+
+<!-- BAY CITY ROLLER -->
+
+<div class="card">
+  <div class="stripe" style="background:linear-gradient(to right,#8C1C13,#C62828)"></div>
+  <div class="cm">
+    <div class="ct">
+      <div class="cid">
+        <div class="silk s-red"></div>
+        <div><div class="hn">Bay City Roller</div></div>
+      </div>
+      <div class="ob"><div class="op">3/1</div><div class="ol">Antepost</div></div>
+    </div>
+    <div class="pills">
+      <div class="pill">Trainer: <strong>G. Scott</strong></div>
+      <div class="pill">4yo colt</div>
+      <div class="pill">Grp 1 penalty</div>
+    </div>
+    <div class="desc">The chief market rival according to official ratings. <strong>Won a Group 1 in Germany by seven lengths</strong> last autumn &mdash; a stunning performance &mdash; and bypassed the Jockey Club Stakes at Newmarket last week when the ground came up too fast. Gets a kinder surface here but does carry a <strong>Group 1 penalty of 5lb</strong>. The question is whether 1m2&frac12;f around the tight Roodee is his optimum trip &mdash; connections have hinted he may want further.</div>
+    <div class="note-amber">&#9878;&#65039; <strong>Watch out:</strong> That Group 1 penalty means he concedes weight to Lambourn. The form figures are outstanding but the trip and track could catch him out on the testing Roodee bends.</div>
+  </div>
+  <div class="cf"></div>
+</div>
+
+<!-- ROYAL RHYME -->
+
+<div class="card">
+  <div class="stripe" style="background:linear-gradient(to right,#1a237e,#283593)"></div>
+  <div class="cm">
+    <div class="ct">
+      <div class="cid">
+        <div class="silk s-navy"></div>
+        <div><div class="hn">Royal Rhyme</div></div>
+      </div>
+      <div class="ob"><div class="op">5/1</div><div class="ol">Antepost</div></div>
+    </div>
+    <div class="pills">
+      <div class="pill">Trainer: <strong>K. Burke</strong></div>
+      <div class="pill">Karl Burke runner</div>
+    </div>
+    <div class="desc">The <strong>Karl Burke-trained veteran</strong> who knows how to win at this level. The TDN verdict is blunt &mdash; &ldquo;needs to prove he retains his old ability which would probably see him win.&rdquo; That&rsquo;s the key question: is there still a top-class performer in here? Burke saddles both this horse and Ice Max, giving him a strong hand in the race.</div>
+    <div class="note-amber">&#128200; <strong>Each-way appeal:</strong> If Royal Rhyme recaptures last season&rsquo;s best, he&rsquo;s capable of winning this. At 5/1 he represents solid each-way value if you want to take on Lambourn.</div>
+  </div>
+  <div class="cf"></div>
+</div>
+
+<!-- KING'S GAMBIT -->
+
+<div class="card">
+  <div class="stripe" style="background:#B8860B"></div>
+  <div class="cm">
+    <div class="ct">
+      <div class="cid">
+        <div class="silk s-gold"></div>
+        <div><div class="hn">King&rsquo;s Gambit</div></div>
+      </div>
+      <div class="ob"><div class="op">6/1</div><div class="ol">Antepost</div></div>
+    </div>
+    <div class="pills">
+      <div class="pill">Trainer: <strong>H. Charlton</strong></div>
+      <div class="pill">Harry Charlton runner</div>
+    </div>
+    <div class="desc">Harry Charlton&rsquo;s representative and a horse who has been campaigned consistently at this level. <strong>Chester&rsquo;s tight circuit</strong> can play to his strengths and he won&rsquo;t be out of his depth in this field. An interesting each-way possibility at the price.</div>
+  </div>
+  <div class="cf"></div>
+</div>
+
+<div class="sh"><div class="shl">Also in the Field</div><div class="shr"></div></div>
+
+<div class="also">
+  <div class="also-h">Rest of the Field</div>
+  <div class="ar"><div class="as s-teal"></div><div class="an">Ice Max</div><div class="am">K. Burke<br>Burke&rsquo;s second string</div><div class="ao">10/1</div></div>
+  <div class="ar"><div class="as s-purple"></div><div class="an">Starford</div><div class="am">J. O&rsquo;Brien<br>Irish raider</div><div class="ao">12/1</div></div>
+  <div class="ar"><div class="as s-grey"></div><div class="an">Sky Safari</div><div class="am">J. Fanshawe<br>Fanshawe runner</div><div class="ao">14/1</div></div>
+  <div class="ar"><div class="as" style="background:#37474f"></div><div class="an">High Stock</div><div class="am">A. Balding<br>Balding runner</div><div class="ao">16/1</div></div>
+  <div class="ar"><div class="as" style="background:#BF360C"></div><div class="an">Sparks Fly</div><div class="am">D. Loughnane<br>Completes the nine</div><div class="ao">20/1</div></div>
+</div>
+
+<div class="sh"><div class="shl">Full Market</div><div class="shr"></div></div>
+
+<div class="odb">
+  <div class="odh"><div class="odht">Deepbridge Huxley Stakes</div><div class="odhs">Group 2 &middot; Chester &middot; 8 May</div></div>
+  <div class="odr hi"><div class="odn">1</div><div class="ods s-co"></div><div class="odna">Lambourn</div><div class="odtr">A. O&rsquo;Brien</div><div class="odp fav">FAV</div></div>
+  <div class="odr hi"><div class="odn">2</div><div class="ods s-red"></div><div class="odna">Bay City Roller</div><div class="odtr">G. Scott</div><div class="odp">3/1</div></div>
+  <div class="odr hi"><div class="odn">3</div><div class="ods s-navy"></div><div class="odna">Royal Rhyme</div><div class="odtr">K. Burke</div><div class="odp">5/1</div></div>
+  <div class="odr"><div class="odn">4</div><div class="ods s-gold"></div><div class="odna">King&rsquo;s Gambit</div><div class="odtr">H. Charlton</div><div class="odp">6/1</div></div>
+  <div class="odr"><div class="odn">5</div><div class="ods s-teal"></div><div class="odna">Ice Max</div><div class="odtr">K. Burke</div><div class="odp">10/1</div></div>
+  <div class="odr"><div class="odn">6</div><div class="ods s-purple"></div><div class="odna">Starford</div><div class="odtr">J. O&rsquo;Brien</div><div class="odp">12/1</div></div>
+  <div class="odr"><div class="odn">7</div><div class="ods s-grey"></div><div class="odna">Sky Safari</div><div class="odtr">J. Fanshawe</div><div class="odp">14/1</div></div>
+  <div class="odr"><div class="odn">8</div><div class="ods" style="background:#37474f"></div><div class="odna">High Stock</div><div class="odtr">A. Balding</div><div class="odp">16/1</div></div>
+  <div class="odr"><div class="odn">9</div><div class="ods" style="background:#BF360C"></div><div class="odna">Sparks Fly</div><div class="odtr">D. Loughnane</div><div class="odp">20/1</div></div>
+</div>
+
+<div class="sh"><div class="shl">RacingEdge Verdict</div><div class="shr"></div></div>
+
+<div class="verd">
+  <div class="vh"><div style="font-size:20px">&#127807;</div><div class="vht">The RacingEdge Call</div></div>
+  <div class="vb">
+    <p><strong>Lambourn</strong> is our NAP and it isn&rsquo;t close. The dual Derby winner returns to the exact track where he announced himself last season, and Wayne Lordan &mdash; who gave him a perfect front-running ride at Epsom &mdash; is back in the saddle. The cheekpieces are a first-time addition that will sharpen him up, and the good ground is ideal. He is simply a class apart from this field.</p>
+    <p>The only genuine concern is the trip &mdash; 1m2&frac12;f is shorter than his best. But O&rsquo;Brien clearly believes he&rsquo;s good enough to win regardless, and the bonus of a <strong>$1 million Manhattan Stakes berth</strong> at Saratoga gives connections every reason to have him spot-on.</p>
+    <p><strong>Bay City Roller</strong> is the obvious market rival, but the Group 1 penalty and questions over the Chester trip make him harder to fancy at the price. <strong>Royal Rhyme</strong> is our each-way selection at 5/1 &mdash; if he&rsquo;s retained his ability, he&rsquo;s a proven performer at this level.</p>
+    <div class="picks">
+      <div class="pick nap"><div class="pl">&#11088; NAP</div><div class="ph">Lambourn</div><div class="pp">FAV</div></div>
+      <div class="pick ew"><div class="pl">Each Way</div><div class="ph">Royal Rhyme</div><div class="pp">5/1</div></div>
+      <div class="pick"><div class="pl">Saver</div><div class="ph">Bay City Roller</div><div class="pp">3/1</div></div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="fb">RacingEdge</div>
+  <div class="fr"></div>
+  <div class="ft">18+ &middot; Please gamble responsibly<br>begambleaware.org &middot; 0808 8020 133</div>
+</footer>
+
+</body>
+</html>
